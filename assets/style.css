@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #255EE9;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    border-radius: 40px;
+}
+
+.Access{
+    background-color: white;
+    padding: 5px;
+    font-size: 0.8rem;
+    width: 3.5rem;
+}
+.Logo{
+    width: 20%; 
+ }
+ 
+
+.yb_2{
+    width: 40%;
+}
+
+.Login{
+    width: 20%; 
+    text-align: end;
+ }
+
+ /* Header (Description) */
+
+ .Description{
+    width: 100%;
+    height: 400px;
+    padding: 50px;
+ }
+
+ .description-content{
+    width: 50%;
+    height: 100%;
+    margin: auto ;
+}
+
+/* Main */
+
+section{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.bg-grey{
+    background-color: #D3D3D3;
+    flex-direction: row-reverse;
+}
+
+.Last{
+    background-color: #23272A;
+}
+
+.Blue{
+    width: 35%;
+    height: 90%;
+}
+
+.Pink{
+    width: 25%;
+    height: 90%;
+}
+
+.GreenBox-Side{
+    height: 800px;
+}
+
+.Green{
+    width: 60%;
+    height: 90%;
+}
+
+.Coral{
+    width: 20%;
+    height: 95%;
+}
+
+.Cian{
+    width: 10%;
+    height: 95%;
+}
+
+hr{
+    color: white;
+}
+
+/* Footer */
+
+.About-Us{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.Acquamarine_box{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
