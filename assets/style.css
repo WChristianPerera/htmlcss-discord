@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-/* Header (Nav) */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* General Styles */
 
 .container {
 	max-width: 1400px;
@@ -12,41 +15,46 @@
 	padding-inline: 1rem;
 }
 
-nav{
+button{
+    border-radius: 40px;
+    display: inline-block;
+    border: none;
+}
+
+.text_white{
+    color: white;
+}
+
+/* Header (Nav) */
+
+.nav-header{
     height: 80px;
     background-color: #255EE9;
 }
 
-nav .container{
+.nav-header .container{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-ul{
+.header-list{
     display: flex;
     justify-content: space-around;
-}
-
-li{
     list-style: none;
 }
 
 a{
     text-decoration: none;
-    color: white;
 }
 
-button{
-    border-radius: 40px;
-}
 
 .Access{
     background-color: white;
-    padding: 5px;
-    font-size: 0.8rem;
-    width: 3.5rem;
+    padding: 10px;
+    font-size: 0.9rem;
+    width: 80px;
 }
 .Logo{
     width: 20%; 
@@ -66,81 +74,162 @@ button{
 
  .Jumbo .Content{
     
-    max-width: 500px;
+    max-width: 700px;
     margin-inline: auto;
-	padding-inline: 1rem;
+	padding-inline: 1rem; 
 }
 
 .Jumbo{
     background-image: url(../img/jumbo.png);
     background-size: cover;
-    height: 600px;
+    padding-top: 10rem;
+	padding-bottom: 4rem;
 }
 
-/* Main 
+.Content{
+    height: 100%;
+    text-align: center;
+}
+    
+.box{
+    font-size: 1.5rem;
+}    
 
-section{
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+.Mac-button{
+    padding: 20px;
+    font-size: 20px;
+    width: 200px;
 }
 
-.bg-grey{
-    background-color: #D3D3D3;
-    flex-direction: row-reverse;
-}
-
-.Last{
+.Windows-button{
+    padding: 20px;
+    font-size: 20px;
+    width: 300px;
     background-color: #23272A;
 }
 
-.Blue{
-    width: 35%;
-    height: 90%;
+.Mac-button,.Windows-button{
+    margin-top: 20px;
 }
 
-.Pink{
-    width: 25%;
-    height: 90%;
+
+/* Main */
+
+main section {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
-.GreenBox-Side{
-    height: 800px;
+.section-feature .container {
+	display: flex;
+	align-items: center;
+	gap: 10%;
 }
 
-.Green{
-    width: 60%;
-    height: 90%;
+.section-feature.reverse .container {
+	flex-direction: row-reverse;
 }
 
-.Coral{
-    width: 20%;
-    height: 95%;
+.bkg-gray {
+	background-color: #F6F6F6; 
 }
 
-.Cian{
-    width: 10%;
-    height: 95%;
+.section-feature .image {
+	flex: 0 0 60%;
 }
 
-hr{
-    color: white;
-} */
-
-/* Footer */
-
-.About-Us{
-    height: 100px;
-    display: flex;
-    align-items: center;
+.section-feature .image img {
+	width: 100%;
 }
 
-.Acquamarine_box{
-    margin: auto;
-    width: 70%;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-
+.section-feature .text {
+	flex: 0 0 30%;
 }
+
+.section-full {
+	text-align: center;
+}
+
+.section-full h3 {
+	margin-inline: auto;
+	padding: 3rem;
+	max-width: 600px;
+	background-image: url('../img/stars.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.btn-violet{
+    background-color: #7289DA;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+
+/* footer */
+
+footer {
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+	background-color: black; 
+}
+
+footer .footer-top {
+	display: flex;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	border-bottom: 3px solid white; 
+}
+
+footer .column-socials {
+	flex: 0 0 40%;
+	color: white;
+}
+
+footer .first-level-list {
+	flex: 0 0 60%;
+}
+
+footer .column-socials h2,h5 {
+	color: #8EA1E1;
+}
+
+footer .lang img {
+	height: 1em;
+}
+
+footer .socials {
+	font-size: 2em;
+}
+
+footer .socials > i {
+	padding-right: 1rem;
+}
+
+footer .first-level-list {
+	display: flex;
+	list-style: none;
+}
+
+footer .first-level-list .column-links {
+	flex: 0 0 25%;
+}
+
+
+footer .footer-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Bonus */
+.wave {
+	display: block;
+	width: 100%;
+	opacity: 3.4%;
+}
+
+.wave.bottom {
+	transform: rotateX(180deg) rotateY(180deg);
+}
+
